@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "Bootpay",
     platforms: [
-        .iOS(.v11)
+        .iOS(.v16)
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
@@ -16,7 +16,7 @@ let package = Package(
     ],
     dependencies: [
 //        .package(url: "https://github.com/AFNetworking/AFNetworking.git", from: "4.0.0"),
-        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.6.0"),
+        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.9.0"),
         .package(url: "https://github.com/tristanhimmelman/ObjectMapper.git", exact: "4.2.0"),
 //        .package(url: "https://github.com/ninjaprox/NVActivityIndicatorView.git", from: "5.0.0")
     ],

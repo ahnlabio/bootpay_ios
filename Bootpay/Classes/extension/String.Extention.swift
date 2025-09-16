@@ -29,7 +29,7 @@ extension String {
         let data = Data(base64Encoded: self)!
         let decrypted = try! AES(key: key.bytes, blockMode: CBC(iv: iv.bytes), padding: .pkcs7).decrypt([UInt8](data))
         let decryptedData = Data(decrypted)
-        return String(bytes: decryptedData.bytes, encoding: .utf8) ?? "Could not decrypt"
+        return String(bytes: decryptedData.byteArray, encoding: .utf8) ?? "Could not decrypt"
     }
     
     func fromBase64() -> String? {
